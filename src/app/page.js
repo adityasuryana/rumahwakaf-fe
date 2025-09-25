@@ -1,4 +1,6 @@
 import { CarouselDemo } from '@/components/carousel'
+import Footer from '@/components/footer'
+import Langganan from '@/components/langganan'
 import Navbar from '@/components/navbar'
 import { Card } from '@/components/ui/card'
 import { dataBanner, dataProgram } from '@/lib/dataLandingPage'
@@ -13,7 +15,7 @@ const page = () => {
         <CarouselDemo banner={dataBanner} size={"object-cover"} />
       </div>
 
-      <div className='container mx-auto my-10'>
+      <div className='container mx-auto mt-10'>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-10'>
           
           <Card className='bg-green-w text-white p-5 rounded-[24px]'>
@@ -34,8 +36,8 @@ const page = () => {
                 <Image src="/e-Wakaf.png" width={120} height={120} alt="icon wakaf" />
               </div>
               <div className='flex flex-col justify-center'>
-                <h1 className='text-orange-w text-3xl font-semibold mb-2'>e-Wakaf</h1>
-                <p className='text-sm'>Anda bisa menunaikan wakaf dengan mudah, kapanpun & dimanapun melalui elektronik wakaf</p>
+                <h1 className='text-orange-w text-3xl font-semibold mb-2'>waqf.id</h1>
+                <p className='text-sm'>Semua orang bisa wakaf. Mulai dari 10ribu Anda bisa menunaikan wakaf setiap harinya</p>
               </div>
             </div>
           </Card>
@@ -46,8 +48,8 @@ const page = () => {
                 <Image src="/e-Wakaf.png" width={120} height={120} alt="icon wakaf" />
               </div>
               <div className='flex flex-col justify-center'>
-                <h1 className='text-orange-w text-3xl font-semibold mb-2'>e-Wakaf</h1>
-                <p className='text-sm'>Anda bisa menunaikan wakaf dengan mudah, kapanpun & dimanapun melalui elektronik wakaf</p>
+                <h1 className='text-orange-w text-3xl font-semibold mb-2'>Rekening Wakaf</h1>
+                <p className='text-sm'>Transfer wakaf melalui rekening kesayangan Anda.</p>
               </div>
             </div>
           </Card>
@@ -63,7 +65,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className='my-10'>
+        <div className='mt-10'>
           <h2 className='text-md flex font-bold justify-center mb-2'>Waqf Impacts</h2>
           <h1 className='text-2xl flex justify-center text-green-w font-semibold mb-2'>Luar Biasa Dampak</h1>
           <h1 className='text-5xl mt-[-15px] flex justify-center text-green-w font-semibold mb-1'>Manfaat Wakaf</h1>
@@ -74,44 +76,46 @@ const page = () => {
           <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-10 my-10'>
           
           <Card className='bg-green-w text-white p-5 rounded-[24px]'>
-            <div className='grid grid-cols-2 gap-4 items-center h-full'>
-              <div className='flex justify-center'>
-                <Image src="/e-Wakaf.png" width={120} height={120} alt="icon wakaf" />
-              </div>
+            <div className='items-center justify-center h-full'>
               <div className='flex flex-col justify-center'>
-                <h1 className='text-orange-w text-3xl font-semibold mb-2'>e-Wakaf</h1>
-                <p className='text-sm'>Anda bisa menunaikan wakaf dengan mudah, kapanpun & dimanapun melalui elektronik wakaf</p>
+                <h1 className='self-center text-white text-4xl justify-center font-bold mb-2'>163.361</h1>
+                <p className='text-md self-center'>Penerima Manfaat Mauquf ‘Alaih</p>
               </div>
             </div>
           </Card>
 
           <Card className='bg-green-w text-white p-5 rounded-[24px]'>
-            <div className='grid grid-cols-2 gap-4 items-center h-full'>
-              <div className='flex justify-center'>
-                <Image src="/e-Wakaf.png" width={120} height={120} alt="icon wakaf" />
-              </div>
+            <div className='items-center h-full'>
               <div className='flex flex-col justify-center'>
-                <h1 className='text-orange-w text-3xl font-semibold mb-2'>e-Wakaf</h1>
-                <p className='text-sm'>Anda bisa menunaikan wakaf dengan mudah, kapanpun & dimanapun melalui elektronik wakaf</p>
+                <h1 className='self-center justify-center text-white text-4xl font-bold mb-2'>11.345</h1>
+                <p className='text-md self-center'>Wakif & Donatur</p>
               </div>
             </div>
           </Card>
 
           <Card className='bg-green-w text-white p-5 rounded-[24px]'>
-            <div className='grid grid-cols-2 gap-4 items-center h-full'>
-              <div className='flex justify-center'>
-                <Image src="/e-Wakaf.png" width={120} height={120} alt="icon wakaf" />
-              </div>
+            <div className='items-center h-full'>
               <div className='flex flex-col justify-center'>
-                <h1 className='text-orange-w text-3xl font-semibold mb-2'>e-Wakaf</h1>
-                <p className='text-sm'>Anda bisa menunaikan wakaf dengan mudah, kapanpun & dimanapun melalui elektronik wakaf</p>
+                <h1 className='self-center text-white text-4xl font-bold mb-2'>520</h1>
+                <p className='text-md self-center'>Mitra Implementasi Program Wakaf</p>
               </div>
             </div>
           </Card>
         </div>
     
         </div>
+
+        <div className='my-10 justify-items-center'>
+          <h2 className='text-xl flex font-bold justify-center mb-2'>Selaras dengan Tujuan Pembangunan Berkelanjutan (SDGs):</h2>
+          <Image className='justify-center' src="/sdg.png" width={1200} height={400} alt="icon wakaf" />
+        </div>
+
+        <Langganan />
+
+
       </div>
+
+      <Footer />
     </div>
   )
 }
