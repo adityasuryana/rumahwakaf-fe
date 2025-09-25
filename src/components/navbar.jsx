@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className='hidden lg:flex gap-10 font-medium'>
           <Link className='text-white text-sm  hover:text-orange-w transition-colors duration-300' href="">KENAPA WAKAF</Link>
           <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="">TENTANG KAMI</Link>
-          <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="">PROGRAM</Link>
+          <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="/program">PROGRAM</Link>
           <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="">BERITA</Link>
           <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="">ARTIKEL</Link>
           <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="/kontak-kami">KONTAK KAMI</Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
 
         {/* Desktop WAKAF Button */}
         <div className='hidden lg:block'>
-          <button className='bg-green-w text-white p-2 px-4 rounded font-semibold hover:bg-green-w hover:text-orange-w cursor-pointer transition-colors duration-300'>WAKAF</button>
+          <a href="https://rumahwakaf.org/wakaf"><button className='bg-green-w text-white p-2 px-4 rounded font-semibold hover:bg-green-w hover:text-orange-w cursor-pointer transition-colors duration-300'>WAKAF</button></a>
         </div>
 
         {/* Mobile Hamburger Button */}
