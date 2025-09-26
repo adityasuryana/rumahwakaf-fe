@@ -35,11 +35,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className='hidden lg:flex gap-10 font-medium'>
-          <Link className='text-white text-sm  hover:text-orange-w transition-colors duration-300' href="">KENAPA WAKAF</Link>
-          <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="">TENTANG KAMI</Link>
+          <Link className='text-white text-sm  hover:text-orange-w transition-colors duration-300' href="/kenapa-wakaf">KENAPA WAKAF</Link>
+          <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="/tentang-kami">TENTANG KAMI</Link>
           <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="/program">PROGRAM</Link>
-          <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="">BERITA</Link>
-          <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="">ARTIKEL</Link>
+          <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="/berita">BERITA</Link>
           <Link className='text-white text-sm hover:text-orange-w transition-colors duration-300' href="/kontak-kami">KONTAK KAMI</Link>
         </div>
 
